@@ -1,15 +1,21 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 import doctorImage from "../assests/R.png"; // ✅ Ensure the path is correct
 import TestimonialCarousel from "../components/Testimonial Carousel";
 import HomeAbout from "../components/HomeAbout";
 import StateCards from "../components/StateCards";
 import FaqSection from "../components/FaqSection";
-import  HomeTreatment from "../components/HomeTreatment"
+import HomeTreatment from "../components/HomeTreatment"
+import ClinicInfo from "../components/ClinicInfo";
+import HomeBlogSection from "../components/HomeBlogSection"
 const DoctorCard = () => {
+  useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
   return (
     <>
-      
+
       <div className="flex items-center justify-center min-h-[750px] w-full p-6">
         <div className="flex flex-col md:flex-row items-center justify-center gap-12 w-full max-w-5xl">
 
@@ -20,9 +26,9 @@ const DoctorCard = () => {
               alt="Doctor"
               className="w-48 h-48 md:w-60 md:h-60 rounded-full border-4 border-green-500"
             />
-            <h2 className="text-xl md:text-2xl font-semibold mt-4">Dr. B M Suraj</h2>
-            <p className="text-gray-500 text-sm md:text-base">General Physician</p>
-            <p className="text-gray-500 text-sm md:text-base">MBBS, MD</p>
+            <h2 className="text-xl md:text-2xl font-semibold mt-4">Dr.Wayne R. Kotzker </h2>
+            <p className="text-gray-500 text-sm md:text-base">NEPHROLOGIST</p>
+            <p className="text-gray-500 text-sm md:text-base"> MD</p>
             <Link
               to="/booking"
               className="text-white px-6 py-3 mt-4 rounded-lg text-lg font-medium border-2 transition duration-[1000ms]"
@@ -77,8 +83,7 @@ const DoctorCard = () => {
               <div className="flex items-start gap-3 mt-4 text-gray-700 text-base">
                 <span className="text-green-600 text-2xl">📍</span>
                 <p>
-                  Iconic Superspeciality Poly Clinic, 178/1, 2nd Floor, Nirmal Arcade, Next to HDFC Bank, RT Nagar, Karnataka, 560032
-                </p>
+                ADDRESS: 670Glades Rd, Suite 110 Boca Raton, FL 33431   </p>
               </div>
 
               {/* 🔽 Divider */}
@@ -115,9 +120,11 @@ const DoctorCard = () => {
         <StateCards />
       </div>
       <HomeAbout />
-    <TestimonialCarousel/>
-    <HomeTreatment/>
-      <FaqSection/>
+      <TestimonialCarousel />
+      <HomeTreatment />
+      <ClinicInfo />
+      <HomeBlogSection />
+      <FaqSection />
     </>
   );
 

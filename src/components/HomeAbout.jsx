@@ -1,6 +1,18 @@
 import about_img from '../assests/R.png'
+import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const AboutSection = () => {
+
+  const navigate = useNavigate();
+
+  const handleLearnMore = () => {
+    navigate('/aboutme');
+  };
+
+
+
+
   return (
     <div className="relative bg-gradient-to-r from-[#00CC99] to-[#336699] py-16 px-6 md:px-20 text-white">
       {/* Wave Effect at Bottom */}
@@ -27,6 +39,7 @@ const AboutSection = () => {
         </div>
 
         {/* Text Section */}
+        {/* Text Section */}
         <div className="max-w-lg text-left">
           <h2 className="text-4xl font-bold leading-tight">
             About <span className="text-white">Our Hospital</span>
@@ -35,10 +48,14 @@ const AboutSection = () => {
             We provide world-class healthcare with top doctors and modern facilities.
             Our goal is to ensure the best medical service with comfort and care.
           </p>
-          <button className="mt-6 px-6 py-3 bg-white text-[#336699] font-bold rounded-lg shadow-lg hover:bg-gray-200 transition">
+          <Link
+            to="/aboutme"
+            className="inline-block mt-6 px-6 py-3 bg-white text-[#336699] font-bold rounded-lg shadow-lg hover:bg-gray-200 transition"
+          >
             Learn More
-          </button>
+          </Link>
         </div>
+
       </div>
     </div>
   );

@@ -49,10 +49,10 @@ const Navbar = () => {
           </button>
 
           <ul className="space-y-4 mt-10">
-            {["Home", "About", "Treatments", "Blogs"].map((item, index) => (
+            {["Home", "About Me", "Treatments", "Blogs","Articles"].map((item, index) => (
               <li key={index}>
                 <Link
-                  to={item === "Home" ? "/" : `/${item.toLowerCase()}`}
+                   to={item === "Home" ? "/" : `/${item.toLowerCase().replace(" ", "")}`}
                   className="block text-lg font-medium text-gray-800 hover:text-blue-500 relative group"
                   onClick={() => setIsOpen(false)}
                 >
@@ -66,7 +66,7 @@ const Navbar = () => {
 
         {/* Desktop Navigation */}
         <nav className="hidden lg:flex lg:items-center lg:ml-auto lg:gap-x-5">
-          {["Home", "About Me", "Treatments", "Blogs"].map((item, index) => (
+          {["Home", "About Me", "Treatments", "Blogs","Articles"].map((item, index) => (
             <Link
               key={index}
               to={item === "Home" ? "/" : `/${item.toLowerCase().replace(" ", "")}`}

@@ -1,19 +1,49 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
+import { useEffect } from "react";
+const blogs = [
+  {
+    id: 1,
+    tag: 'Finance',
+    title: 'Clever ways to invest in product to organize your portfolio',
+    desc: 'Discover smart investment strategies...',
+    img: 'https://pagedone.io/asset/uploads/1696244059.png',
+    date: 'April 5, 2025',
+  },
+  {
+    id: 2,
+    tag: 'Growth',
+    title: 'How to grow your profit...',
+    desc: 'Unlock the power of systematic investment...',
+    img: 'https://pagedone.io/asset/uploads/1696244074.png',
+    date: 'April 3, 2025',
+  },
+  // Add all your blog data here (up to 10)
+];
 
-const Blogs = () => {
+const AllBlogs = () => {
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
+
+  const navigate = useNavigate();
+
   return (
-    <div className="blogs-container">
-      <h2>Health Blogs</h2>
-      <div className="blog-card">
-        <h3>Healthy Living Tips</h3>
-        <p>Stay fit with these tips.</p>
-      </div>
-      <div className="blog-card">
-        <h3>Managing Stress</h3>
-        <p>Best ways to reduce stress.</p>
+    <div className="max-w-6xl mx-auto px-4 py-20">
+      <h1 className="text-4xl font-bold mb-10 text-center">All Blogs</h1>
+      <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
+        {blogs.map(blog => (
+          <div key={blog.id} onClick={() => navigate(`/blog/${blog.id}`)} className="cursor-pointer shadow-lg rounded-2xl p-5 group hover:shadow-xl transition">
+            <img src={blog.img} alt={blog.title} className="w-full h-56 object-cover rounded-xl mb-4" />
+            <p className="text-sm text-[#336699] uppercase font-semibold">{blog.tag}</p>
+            <h3 className="text-xl font-bold group-hover:text-[#336699]">{blog.title}</h3>
+            <p className="text-gray-500 text-sm">{blog.date}</p>
+            <p className="text-gray-600 mt-2">{blog.desc}</p>
+          </div>
+        ))}
       </div>
     </div>
   );
 };
 
-export default Blogs;
+export default AllBlogs;
