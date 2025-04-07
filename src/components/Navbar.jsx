@@ -10,21 +10,22 @@ const Navbar = () => {
 
         {/* Logo with Name (Desktop View) */}
         <Link to="/" className="hidden sm:flex items-center gap-2">
-          <img style={{ width: "350px" }}
+          {/* <img style={{ width: "350px" }}
             src={Logo} // Replace with the correct path to your logo
             alt="Logo"
             className="w-12 h-12 object-contain" // Adjust size as needed
-          />
-          {/* <span className="text-[25px] font-bold text-gray-900">Dr. Wayne R. Kotzker</span> */}
+          /> */}
+          <span className="text-[25px] font-bold text-gray-900">Dr. Wayne R. Kotzker</span>
         </Link>
 
         {/* Logo Only (Mobile View) */}
         <Link to="/" className="sm:hidden flex items-center gap-2">
-          <img style={{ width: "200px" }}
+          {/* <img style={{ width: "200px" }}
             src={Logo} // Replace with the correct path to your logo
             alt="Logo"
             className=" object-contain" // Smaller size for mobile
-          />
+          /> */}
+           <span className="text-[25px] font-bold text-gray-900">Dr. Wayne R. Kotzker</span>
         </Link>
 
         {/* Mobile Menu Button (Hamburger) */}
