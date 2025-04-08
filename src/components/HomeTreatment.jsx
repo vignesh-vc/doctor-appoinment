@@ -6,44 +6,44 @@ const treatments = [
   {
     id: 1,
     icon: <FaHeartbeat className="text-white text-xl" />,
-    title: "Cardiology",
+    title: "Thyroid Disease",
     description:
-      "Get top-notch cardiac care with advanced diagnostics and compassionate treatment.",
+      "Get butterflies, not butterfly gland diseases",
   },
   {
     id: 2,
     icon: <FaCapsules className="text-white text-xl" />,
-    title: "Pharmacy Support",
+    title: "Heart Problems",
     description:
-      "Comprehensive pharmaceutical care and consultation tailored to your health needs.",
+      "Don’t let your heart fail!",
   },
   {
     id: 3,
     icon: <FaStethoscope className="text-white text-xl" />,
-    title: "General Checkups",
+    title: "B.P. Management",
     description:
-      "Routine health checkups to keep you in top condition all year round.",
+      "Control your blood pressure",
   },
   {
     id: 4,
     icon: <FaHeartbeat className="text-white text-xl" />,
-    title: "Cardiolog",
+    title: "Respiratory Problems",
     description:
-      "Get top-notch cardiac care with advanced diagnostics and compassionate treatment.",
+      "Breathe in a better quality of life",
   },
   {
     id: 5,
     icon: <FaCapsules className="text-white text-xl" />,
-    title: "Pharmacy Support",
+    title: "Migraine",
     description:
-      "Comprehensive pharmaceutical care and consultation tailored to your health needs.",
+      " It's not just a headache",
   },
   {
     id: 6,
     icon: <FaStethoscope className="text-white text-xl" />,
-    title: "General Checkups",
+    title: "Pain Management",
     description:
-      "Routine health checkups to keep you in top condition all year round.",
+      "Because you deserve a pain-free life",
   },
 ];
 

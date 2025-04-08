@@ -4,19 +4,27 @@ import { useEffect } from "react";
 const blogs = [
   {
     id: 1,
-    tag: 'Finance',
-    title: 'Clever ways to invest in product to organize your portfolio',
-    desc: 'Discover smart investment strategies...',
+   tag: 'All About Asthma 12',
+   // title: 'All About Asthma 12',
+    desc: 'Asthma is a long-term illness that affects the lungs airways. The airways swell as the condition progresses due to a lack of oxygen.',
     img: 'https://pagedone.io/asset/uploads/1696244059.png',
     date: 'April 5, 2025',
   },
   {
     id: 2,
-    tag: 'Growth',
-    title: 'How to grow your profit...',
-    desc: 'Unlock the power of systematic investment...',
+    tag: 'Living life with diabetes12',
+  //  title: 'How to grow your profit through systematic investment with us',
+    desc: 'Living life can be worrisome if you have diabetes, but hey, everything can be managed with the right steps!',
     img: 'https://pagedone.io/asset/uploads/1696244074.png',
     date: 'April 3, 2025',
+  },
+  {
+    id: 3,
+    tag: 'Thyroid: Myths and Facts12',
+    //title: 'Investment strategies for long-term growth and security',
+    desc: 'Know what is the myth and what is the fact for better understanding of your thyroid troubles.',
+    img: 'https://pagedone.io/asset/uploads/1696244059.png',
+    date: 'April 1, 2025',
   },
   // Add all your blog data here (up to 10)
 ];

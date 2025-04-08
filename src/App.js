@@ -13,6 +13,7 @@ import About from "./pages/About";
 import Blogs from "./pages/Blogs";
 import BlogDetail from "./pages/BlogDetail";  // ✅ Import Single Blog Detail page
 import TreatmentDetail from "./pages/TreatmentDetail";
+import Articles from "./pages/Articles";
 function App() {
   const [loading, setLoading] = useState(true);
 
@@ -38,6 +39,8 @@ function App() {
         {/* ✅ New Blog Routes */}
         {/* <Route path="/all-blogs" element={<AllBlogs />} /> */}
         <Route path="/blog/:id" element={loading ? <Loader /> : <BlogDetail />} />
+        <Route path="/articles" element={loading ? <Loader /> : <Articles />} />
+
       </Routes>
 
       <Footer />

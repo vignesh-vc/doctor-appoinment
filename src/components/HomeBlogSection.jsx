@@ -18,8 +18,8 @@ const BlogSlider = () => {
   const blogs = [
     {
       id: 1,
-      tag: 'All About Asthma 12',
-     // title: 'Clever ways to invest in product to organize your portfolio',
+     tag: 'All About Asthma 12',
+     // title: 'All About Asthma 12',
       desc: 'Asthma is a long-term illness that affects the lungs airways. The airways swell as the condition progresses due to a lack of oxygen.',
       img: 'https://pagedone.io/asset/uploads/1696244059.png',
       date: 'April 5, 2025',

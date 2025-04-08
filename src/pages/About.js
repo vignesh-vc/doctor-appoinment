@@ -24,8 +24,9 @@ const About = () => {
         <div className={dotStyle}></div>
         <h2 className="text-2xl font-semibold mb-2">Biography</h2>
         <p className="text-gray-600 leading-relaxed">
-          Dr. B M Suraj is a renowned and experienced General Physician in Bangalore. He brings with him an experience of 19 years and has been associated with some of the best hospitals in Bangalore. A dedicated, compassionate doctor who handles many challenging cases with the latest cutting-edge technology. He offers patient-friendly scientific advice to your problems while maintaining the highest professional and ethical values.
-        </p>
+          Physician Partner,Clinical Lead for Value Based Care Principle  Investigator (Panoramic Science)  </p>
+        <p className="text-gray-600 leading-relaxed">
+          Florida Kidney Physicians </p>
       </div>
 
       {/* Education */}
@@ -56,12 +57,21 @@ const About = () => {
           </div>
         </div>
       </div>
+      <div className="mb-10 relative">
+        <div className={dotStyle}></div>
+        <h2 className="text-2xl font-semibold mb-2">Medical License</h2>
+        <p className="text-gray-600 leading-relaxed">
+          Medical License, Florida:ME88119 - 2003 - Present  </p>
+        <p className="text-gray-600 leading-relaxed">
+          DEA:BK4938645 - 1995 - Present</p>
+      </div>
+
     </div>
   );
 
   const renderDoctorImage = () => (
     <div className="w-full md:w-1/2 flex justify-center">
-      <div className="w-full h-full flex items-center justify-center">
+      <div className="w-full h-full flex items-center  md:mt-[-100px] justify-center">
         <img
           src={profileImg}
           alt="Dr. B M Suraj"
@@ -137,8 +147,8 @@ const About = () => {
         <button
           onClick={() => setActiveTab("default")}
           className={`px-4 py-2 rounded-full text-sm font-medium border transition-all duration-300 ${activeTab === "default"
-              ? "bg-purple-600 text-white shadow"
-              : "bg-white text-purple-600 border-purple-600 hover:bg-purple-100"
+            ? "bg-purple-600 text-white shadow"
+            : "bg-white text-purple-600 border-purple-600 hover:bg-purple-100"
             }`}
         >
           All Experience
@@ -148,8 +158,8 @@ const About = () => {
             key={key}
             onClick={() => setActiveTab(key)}
             className={`px-4 py-2 rounded-full text-sm font-medium border transition-all duration-300 ${activeTab === key
-                ? "bg-purple-600 text-white shadow"
-                : "bg-white text-purple-600 border-purple-600 hover:bg-purple-100"
+              ? "bg-purple-600 text-white shadow"
+              : "bg-white text-purple-600 border-purple-600 hover:bg-purple-100"
               }`}
           >
             {key}

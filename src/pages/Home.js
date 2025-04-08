@@ -29,6 +29,8 @@ const DoctorCard = () => {
             <h2 className="text-xl md:text-2xl font-semibold mt-4">Dr.Wayne R. Kotzker </h2>
             <p className="text-gray-500 text-sm md:text-base">NEPHROLOGIST</p>
             <p className="text-gray-500 text-sm md:text-base"> MD</p>
+            <p className="text-gray-500 text-sm md:text-base"> Medical License, Florida:ME88119 - 2003 - Present</p>
+            <p className="text-gray-500 text-sm md:text-base"> DEA:BK4938645 - 1995 - Present</p>
             <Link
               to="/booking"
               className="text-white px-6 py-3 mt-4 rounded-lg text-lg font-medium border-2 transition duration-[1000ms]"

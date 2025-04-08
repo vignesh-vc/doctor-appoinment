@@ -7,46 +7,74 @@ const treatments = [
   {
     id: 1,
     icon: <FaHeartbeat className="text-white text-xl" />,
-    title: "Cardiology",
-    description: "Get top-notch cardiac care with advanced diagnostics and compassionate treatment.",
-    image: "https://pagedone.io/asset/uploads/1696244059.png",
+    title: "Thyroid Disease",
+    description:
+      "Get butterflies, not butterfly gland diseases",
   },
   {
     id: 2,
     icon: <FaCapsules className="text-white text-xl" />,
-    title: "Pharmacy Support",
-    description: "Comprehensive pharmaceutical care and consultation tailored to your health needs.",
-    image: "https://pagedone.io/asset/uploads/1696244074.png",
+    title: "Heart Problems",
+    description:
+      "Don’t let your heart fail!",
   },
   {
     id: 3,
     icon: <FaStethoscope className="text-white text-xl" />,
-    title: "General Checkups",
-    description: "Routine health checkups to keep you in top condition all year round.",
-    image: "https://pagedone.io/asset/uploads/1696244095.png",
-  }, {
+    title: "B.P. Management",
+    description:
+      "Control your blood pressure",
+  },
+  {
     id: 4,
     icon: <FaHeartbeat className="text-white text-xl" />,
-    title: "Cardiology",
-    description: "Get top-notch cardiac care with advanced diagnostics and compassionate treatment.",
-    image: "https://pagedone.io/asset/uploads/1696244059.png",
+    title: "Respiratory Problems",
+    description:
+      "Breathe in a better quality of life",
   },
   {
     id: 5,
     icon: <FaCapsules className="text-white text-xl" />,
-    title: "Pharmacy Support",
-    description: "Comprehensive pharmaceutical care and consultation tailored to your health needs.",
-    image: "https://pagedone.io/asset/uploads/1696244074.png",
+    title: "Migraine",
+    description:
+      "Migraine : It's not just a headache",
   },
   {
     id: 6,
     icon: <FaStethoscope className="text-white text-xl" />,
-    title: "General Checkups",
-    description: "Routine health checkups to keep you in top condition all year round.",
-    image: "https://pagedone.io/asset/uploads/1696244095.png",
+    title: "Pain Management",
+    description:
+      "Because you deserve a pain-free life",
+  },
+  {
+    id: 7,
+    icon: <FaHeartbeat className="text-white text-xl" />,
+    title: "Gastric Disorders",
+    description:
+      "There might be more to that “tummy pain”",
+  },
+  {
+    id: 8,
+    icon: <FaCapsules className="text-white text-xl" />,
+    title: "Diabetes Management",
+    description:
+      "Diabetes care in a multidisciplinary setting",
+  },
+  {
+    id: 9,
+    icon: <FaStethoscope className="text-white text-xl" />,
+    title: "Infectious Diseases",
+    description:
+      "Stop the spread!",
+  },
+  {
+    id: 10,
+    icon: <FaHeartbeat className="text-white text-xl" />,
+    title: "Vaccination And Check-up",
+    description:
+      "Trap the root cause",
   }
 ];
-
 const Treatments = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -64,7 +92,7 @@ const Treatments = () => {
         All Treatments
       </h2>
 
-      <div className="grid md:grid-cols-3 gap-6">
+      <div className="grid md:grid-cols-4 gap-6">
         {treatments.map((treatment) => (
           <div
             key={treatment.id}
