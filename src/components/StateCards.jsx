@@ -31,7 +31,7 @@ const StatsCard = () => {
       {stats.map((stat, index) => (
         <React.Fragment key={index}>
           <div className="flex flex-col items-center text-center mb-6 md:mb-0 hover:scale-105 transition-transform duration-300 ease-in-out w-full md:w-auto">
-            <h2 className="text-4xl sm:text-5xl font-extrabold text-blue-600 drop-shadow">
+            <h2 className="text-4xl sm:text-5xl font-extrabold text-[#336699] drop-shadow">
               <CountUp
                 end={stat.title}
                 duration={2}

@@ -1,13 +1,15 @@
 import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
-
+import Thyroid from "../assests/thyroid.jpg"
+import Diabetes from "../assests/Diabetes.jpg";
+import Asthma  from "../assests/Asthma.webp"
 const blogs = [
   {
     id: 1,
     tag: "All About Asthma",
     title: "All About Asthma",
     date: "April 5, 2025",
-    img: "https://pagedone.io/asset/uploads/1696244059.png",
+    img: Asthma,
     htmlContent: `
        <h1 class="text-xl font-semibold mt-6 mb-2"><strong>Asthma and its symptoms</strong> </h1>
      <p>Asthma is a long-term illness that affects the lungs' airways. The airways swell as the condition progresses due to a lack of oxygen. As a result, they become hypersensitive to certain substances that people inhale. Chest tightness, wheezing, breathlessness, and coughing are all common symptoms.</p>
@@ -42,7 +44,7 @@ After a series of tests and consideration of the patient's entire medical histor
     tag: "Living life with diabetes",
     title: "Living life with diabetes",
     date: "April 3, 2025",
-    img: "https://pagedone.io/asset/uploads/1696244074.png",
+    img:Diabetes,
     htmlContent: `
     <h1 class="text-xl font-semibold mt-6 mb-2"><strong>Living life with diabetes</strong> </h1>
       <p>Living life can be worrisome if you have diabetes, but hey, everything can be managed with the right steps! That’s why we are here with 4 key points that will help you lead a better life.</p>
@@ -125,7 +127,7 @@ After a series of tests and consideration of the patient's entire medical histor
     tag: "Thyroid: Myths and Facts",
     title: "Thyroid: Myths and Facts",
     date: "April 1, 2025",
-    img: "https://pagedone.io/asset/uploads/1696244059.png",
+    img: Thyroid,
     htmlContent: `
     <h1 class="text-xl font-semibold mt-6 mb-2"><strong>Thyroid self-assessment</strong> </h1>
       <p>Early detection is critical for successfully treating any thyroid problem. To assist with this, perform a self-exam known as the "neck check." Looking into a mirror, extending your neck, and gently turning your head slightly left and then right can help you detect a lump or enlargement. 

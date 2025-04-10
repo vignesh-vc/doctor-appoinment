@@ -1,6 +1,16 @@
 import React, { useEffect } from "react";
 import { useParams, Link, useNavigate } from "react-router-dom";
 import { FaHeartbeat, FaCapsules, FaStethoscope } from "react-icons/fa";
+import Thyroid from "../assests/thyroid.jpg"
+import Heart from "../assests/heart.jpg";
+import BP from "../assests/bp.jpg";
+import Respiratory from "../assests/respiratory.webp";
+import Migraine from "../assests/Migraine.jpg";
+import Pain from "../assests/Pain Management.jpg";
+import Gastric from "../assests/Gastric.jpg";
+import Diabetes from "../assests/Diabetes.jpg";
+import Infectious from "../assests/Infectious.jpg";
+import Vaccination from "../assests/Vaccination.jpg";
 
 const treatments = [
   {
@@ -8,7 +18,7 @@ const treatments = [
     icon: <FaHeartbeat className="text-white text-xl" />,
     title: "Thyroid Disease",
     description: "Get butterflies, not butterfly gland diseases",
-    img: "https://pagedone.io/asset/uploads/1696244059.png",
+    img: Thyroid,
     htmlContent: `
       <h1 class="text-xl font-semibold mt-6 mb-2">Thyroid Disease:</h1>
       <p>The thyroid gland, which is located at the base of the neck, is in charge of releasing hormones into the bloodstream. This gland's malfunction can result in a variety of symptoms and complications. The highly experienced specialists at our clinic help diagnose and treat patients with thyroid disorders.</p>
@@ -22,7 +32,7 @@ const treatments = [
     icon: <FaHeartbeat className="text-white text-xl" />,
     title: "Heart Problems",
     description: "Get butterflies, not butterfly gland diseases",
-    img: "https://pagedone.io/asset/uploads/1696244059.png",
+    img:Heart ,
     htmlContent: `
     <h1 class="text-xl font-semibold mt-6 mb-2"></h1>
      <p>Despite having a chronic cardiac condition, you can live a healthy, happy life if you have the right team in place, the right medications and devices prescribed as needed, and the right lifestyle changes. </p>
@@ -42,7 +52,7 @@ const treatments = [
     icon: <FaHeartbeat className="text-white text-xl" />,
     title: "B.P. Management",
     description: "Get butterflies, not butterfly gland diseases",
-    img: "https://pagedone.io/asset/uploads/1696244059.png",
+    img: BP,
     htmlContent: `
       <h1 class="text-xl font-semibold mt-6 mb-2"></h1>
       <p>High blood pressure is usually caused by the narrowing of the arteries caused by the buildup of a sticky substance called plaque. Plaque forms as a result of excess cholesterol in your blood, which is typically caused by a diet high in certain types of fats and low in fibre.</p>
@@ -58,7 +68,7 @@ const treatments = [
     icon: <FaHeartbeat className="text-white text-xl" />,
     title: "Respiratory Problems",
     description: "Get butterflies, not butterfly gland diseases",
-    img: "https://pagedone.io/asset/uploads/1696244059.png",
+    img: Respiratory,
     htmlContent: `
       <h1 class="text-xl font-semibold mt-6 mb-2"></h1>
       <p>Respiratory illness is a common problem in metropolitan cities. Certain factors and behaviours, such as smoking, air pollution, and environmental issues can contribute to respiratory diseases. Other causes include autoimmune diseases such as rheumatoid arthritis and genetic defects. </p>
@@ -73,7 +83,7 @@ bronchitis, tuberculosis, lung cancer, pulmonary edema, and pneumonia are exampl
     icon: <FaHeartbeat className="text-white text-xl" />,
     title: "Migraine",
     description: "Get butterflies, not butterfly gland diseases",
-    img: "https://pagedone.io/asset/uploads/1696244059.png",
+    img: Migraine,
     htmlContent: `
       <h1 class="text-xl font-semibold mt-6 mb-2"></h1>
       <p>Migraine is characterized by throbbing pain on one side of the head. A migraine headache is triggered by a variety of factors, including stress, hormonal imbalance, and others. It may be accompanied by vomiting, nausea, eye pain, or light sensitivity in some cases. Migraine attacks cause excruciating headaches that can last for hours or even days.</p>
@@ -95,7 +105,7 @@ bronchitis, tuberculosis, lung cancer, pulmonary edema, and pneumonia are exampl
     icon: <FaHeartbeat className="text-white text-xl" />,
     title: "Pain Management",
     description: "Get butterflies, not butterfly gland diseases",
-    img: "https://pagedone.io/asset/uploads/1696244059.png",
+    img: Pain,
     htmlContent: `
       <h1 class="text-xl font-semibold mt-6 mb-2"></h1>
       <p>Pain or chronic pain is a complete medical problem that has a significant impact on your immune system and can result in unexpected outcomes. We provide comprehensive pain management services for a wide range of chronic pain conditions, including back pain, neck pain, shoulder pain, facial pain, headache, neuropathic pain, slipped disc, failed back surgery pain, sciatica, and others. At our pain management clinic, you will receive the best pain treatment available.</p>
@@ -109,7 +119,7 @@ bronchitis, tuberculosis, lung cancer, pulmonary edema, and pneumonia are exampl
     icon: <FaHeartbeat className="text-white text-xl" />,
     title: "Gastric Disorders",
     description: "Get butterflies, not butterfly gland diseases",
-    img: "https://pagedone.io/asset/uploads/1696244059.png",
+    img: Gastric,
     htmlContent: `
       <h1 class="text-xl font-semibold mt-6 mb-2"></h1>
       <p>Gastrointestinal conditions are disorders of the digestive system, an extensive and complex system that breaks down food in order to absorb water and extract nutrients, minerals, and vitamins for the body's use, while also removing unabsorbed waste (feces).</p>
@@ -134,7 +144,7 @@ bronchitis, tuberculosis, lung cancer, pulmonary edema, and pneumonia are exampl
     icon: <FaHeartbeat className="text-white text-xl" />,
     title: "Diabetes Management",
     description: "Get butterflies, not butterfly gland diseases",
-    img: "https://pagedone.io/asset/uploads/1696244059.png",
+    img: Diabetes,
     htmlContent: `
       <h1 class="text-xl font-semibold mt-6 mb-2"></h1>
       <p>We specialize in helping patients manage their diabetes so they can stay healthy.</p>
@@ -150,7 +160,7 @@ bronchitis, tuberculosis, lung cancer, pulmonary edema, and pneumonia are exampl
     icon: <FaHeartbeat className="text-white text-xl" />,
     title: "Infectious Diseases",
     description: "Get butterflies, not butterfly gland diseases",
-    img: "https://pagedone.io/asset/uploads/1696244059.png",
+    img: Infectious,
     htmlContent: `
       <h1 class="text-xl font-semibold mt-6 mb-2"></h1>
       <p>A microbiome of bacteria, pathogens, fungi, and viruses lives in your body. They usually do not cause any harm. Microorganisms, on the other hand, can occasionally cause disease. Infection-causing pathogens or parasites can also be contracted from other people, animals, insects, or contaminated food.</p>
@@ -164,7 +174,7 @@ bronchitis, tuberculosis, lung cancer, pulmonary edema, and pneumonia are exampl
     icon: <FaHeartbeat className="text-white text-xl" />,
     title: "Vaccination And Check-up",
     description: "Get butterflies, not butterfly gland diseases",
-    img: "https://pagedone.io/asset/uploads/1696244059.png",
+    img: Vaccination,
     htmlContent: `
       <h1 class="text-xl font-semibold mt-6 mb-2"></h1>
       <p>Regular health checks can detect any early warning signs of illness. During a health check-up, our doctors will inquire about your medical history, family history of the disease, and your lifestyle, which includes your diet, weight, physical activity, alcohol consumption, and smoking habits. Kidney and liver function, blood tests, glucose levels, chest x-ray, ECG, abdomen ultrasound, and urine analysis are among the tests done. Everyone should have a routine checkup once a year, however, if you have an underlying health problem, you should see a doctor more frequently.</p>

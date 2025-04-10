@@ -1,13 +1,16 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
+import Thyroid from "../assests/thyroid.jpg"
+import Diabetes from "../assests/Diabetes.jpg";
+import Asthma  from "../assests/Asthma.webp"
 const blogs = [
   {
     id: 1,
    tag: 'All About Asthma 12',
    // title: 'All About Asthma 12',
     desc: 'Asthma is a long-term illness that affects the lungs airways. The airways swell as the condition progresses due to a lack of oxygen.',
-    img: 'https://pagedone.io/asset/uploads/1696244059.png',
+    img: Asthma ,
     date: 'April 5, 2025',
   },
   {
@@ -15,7 +18,7 @@ const blogs = [
     tag: 'Living life with diabetes12',
   //  title: 'How to grow your profit through systematic investment with us',
     desc: 'Living life can be worrisome if you have diabetes, but hey, everything can be managed with the right steps!',
-    img: 'https://pagedone.io/asset/uploads/1696244074.png',
+    img:Diabetes,
     date: 'April 3, 2025',
   },
   {
@@ -23,7 +26,7 @@ const blogs = [
     tag: 'Thyroid: Myths and Facts12',
     //title: 'Investment strategies for long-term growth and security',
     desc: 'Know what is the myth and what is the fact for better understanding of your thyroid troubles.',
-    img: 'https://pagedone.io/asset/uploads/1696244059.png',
+    img:Thyroid,
     date: 'April 1, 2025',
   },
   // Add all your blog data here (up to 10)
@@ -38,7 +41,7 @@ const AllBlogs = () => {
 
   return (
     <div className="max-w-6xl mx-auto px-4 py-20">
-      <h1 className="text-4xl font-bold mb-10 text-center">All Blogs</h1>
+      <h1 className="text-4xl font-bold text-[#336699] mb-10 text-center">All Blogs</h1>
       <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
         {blogs.map(blog => (
           <div key={blog.id} onClick={() => navigate(`/blog/${blog.id}`)} className="cursor-pointer shadow-lg rounded-2xl p-5 group hover:shadow-xl transition">

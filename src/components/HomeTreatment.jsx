@@ -67,7 +67,7 @@ const TreatmentSection = () => {
               key={item.id}
               className="bg-white rounded-2xl p-6 text-left shadow-sm hover:shadow-lg transition"
             >
-              <div className="w-10 h-10 flex items-center justify-center rounded-full bg-pink-600 mb-4">
+              <div className="w-10 h-10 flex items-center justify-center rounded-full bg-[#00CC99] mb-4">
                 {item.icon}
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-2">
@@ -76,10 +76,10 @@ const TreatmentSection = () => {
               <p className="text-gray-600 mb-6 text-sm">{item.description}</p>
               <button
                 onClick={() => handleNavigate(item.id)}
-                className="flex items-center justify-between w-full border border-gray-200 rounded-full py-2 px-4 group hover:bg-[#f4ebff] transition"
+                className="flex items-center justify-between w-full border border-gray-200 rounded-full py-2 px-4 group hover:bg-[#00CC99] transition"
               >
                 <span className="text-sm font-medium text-gray-900">Explore</span>
-                <span className="ml-auto w-8 h-8 rounded-full bg-purple-100 text-purple-700 flex items-center justify-center group-hover:bg-purple-600 group-hover:rotate-[-90deg] group-hover:text-white transition">
+                <span className="ml-auto w-8 h-8 rounded-full bg-[#00CC99] text-purple-700 flex items-center justify-center group-hover:bg-[#336699] group-hover:rotate-[-90deg] group-hover:text-white transition">
                   →
                 </span>
               </button>
@@ -96,7 +96,7 @@ const TreatmentSection = () => {
             <span className="text-base font-medium text-gray-900">
               View All Treatments
             </span>
-            <span className="ml-3 w-8 h-8 rounded-full bg-purple-100 text-purple-700 flex items-center justify-center transition-transform duration-300 group-hover:rotate-[-90deg] hover:bg-purple-600 hover:text-white">
+            <span className="ml-3 w-8 h-8 rounded-full bg-[#00CC99] text-purple-700 flex items-center justify-center transition-transform duration-300 group-hover:rotate-[-90deg] hover:bg-[#336699] hover:text-white">
               →
             </span>
           </Link>

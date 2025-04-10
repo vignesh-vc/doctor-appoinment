@@ -8,10 +8,10 @@ const About = () => {
     window.scrollTo(0, 0);
   }, []);
 
-  const dotStyle = "absolute w-3.5 h-3.5 bg-purple-600 rounded-full left-[-25px] top-2";
+  const dotStyle = "absolute w-3.5 h-3.5 bg-[#00CC99] rounded-full left-[-25px] top-2";
 
   const renderDoctorInfo = () => (
-    <div className="w-full md:w-1/2 relative border-l-2 border-purple-600 pl-10">
+    <div className="w-full md:w-1/2 relative border-l-2 border-[#00CC99] pl-10">
       {/* Header */}
       <div className="mb-8 relative">
         <div className={dotStyle}></div>
@@ -65,6 +65,40 @@ const About = () => {
         <p className="text-gray-600 leading-relaxed">
           DEA:BK4938645 - 1995 - Present</p>
       </div>
+
+    </div>
+  );
+  const renderDoctorCertification = () => (
+    <div className="w-full md:w-1/2 relative border-l-2 border-[#00CC99] pl-10">
+      
+
+      {/* Certification */}
+      <div className="mb-10 relative">
+        <div className={dotStyle}></div>
+        <h2 className="text-2xl font-semibold mb-4">Certifications</h2>
+        <div className="space-y-6">
+          <div>
+            <h3 className="text-lg font-semibold">Good Clinical Practice Certified</h3>
+            <p className="text-gray-600">Year: 2021</p>
+          
+          </div>
+          <div>
+            <h3 className="text-lg font-semibold">IATA and Dangerous Goods Handling Certified </h3>
+            <p className="text-gray-600">Year: 2020</p>
+          
+          </div>
+          <div>
+            <h3 className="text-lg font-semibold">UMDNJ-Robert Wood Johnson Medical School New Brunswick, NJ</h3>
+            <p className="text-gray-600">1994-1997</p>
+            <p className="text-gray-600">Inhem and Resicent. Department of internal Medicine</p>
+          </div>
+          <div>
+            <h3 className="text-lg font-semibold">RAVE EDC Data Capture Tools</h3>
+            <p className="text-gray-600">Year:2020</p>
+          </div>
+        </div>
+      </div>
+      
 
     </div>
   );
@@ -135,7 +169,7 @@ const About = () => {
   };
 
   const renderWorkExperience = () => (
-    <div className="w-full relative border-l-2 border-purple-600 pl-10">
+    <div className="w-full relative border-l-2 border-[#00CC99] pl-10">
       {/* Title */}
       <div className="mb-6 relative">
         <div className={dotStyle}></div>
@@ -147,8 +181,8 @@ const About = () => {
         <button
           onClick={() => setActiveTab("default")}
           className={`px-4 py-2 rounded-full text-sm font-medium border transition-all duration-300 ${activeTab === "default"
-            ? "bg-purple-600 text-white shadow"
-            : "bg-white text-purple-600 border-purple-600 hover:bg-purple-100"
+            ? "bg-[#00CC99] text-white shadow"
+            : "bg-white text-[#00CC99] border-[#00CC99] hover:bg-[#00CC99] hover:text-white"
             }`}
         >
           All Experience
@@ -158,8 +192,8 @@ const About = () => {
             key={key}
             onClick={() => setActiveTab(key)}
             className={`px-4 py-2 rounded-full text-sm font-medium border transition-all duration-300 ${activeTab === key
-              ? "bg-purple-600 text-white shadow"
-              : "bg-white text-purple-600 border-purple-600 hover:bg-purple-100"
+              ? "bg-[#00CC99] text-white shadow"
+              : "bg-white text-[#00CC99] border-[#00CC99] hover:bg-[#00CC99] hover:text-white"
               }`}
           >
             {key}
@@ -201,6 +235,9 @@ const About = () => {
       {/* Work Experience Section */}
       <div className="flex flex-col gap-6">
         {renderWorkExperience()}
+      </div>
+      <div className="flex flex-col gap-6">
+      {renderDoctorCertification()}
       </div>
     </div>
   );

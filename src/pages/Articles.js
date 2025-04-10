@@ -38,7 +38,7 @@ const Articles = () => {
       {items.map((item) => (
         <li
           key={item.id}
-          className="p-4 border border-gray-300 rounded-lg shadow-sm transition-all duration-300 cursor-pointer hover:border-l-4 hover:border-purple-600 hover:pl-6"
+          className="p-4 border border-gray-300 rounded-lg shadow-sm transition-all duration-300 cursor-pointer hover:border-l-4 hover:border-[#00CC99] hover:pl-6"
           onClick={() => handleNavigation(type, item.id)}
         >
           <h3 className="text-lg font-semibold">{item.title}</h3>
@@ -58,12 +58,12 @@ const Articles = () => {
           {renderList(publications, 'publication')}
         </section>
 
-        <div className="border-t-4 border-purple-600 w-48 mx-auto my-10 rounded-full"></div>
+        <div className="border-t-4 border-[#00CC99] w-48 mx-auto my-10 rounded-full"></div>
 
-        <section>
+        {/* <section>
           <h2 className="text-2xl font-semibold text-gray-700 mb-4">Certifications</h2>
           {renderList(certifications, 'certification')}
-        </section>
+        </section> */}
       </div>
     </div>
   );
