@@ -1,7 +1,7 @@
 import React from 'react';
 import { AiFillStar } from 'react-icons/ai';
 import { FaCalendarAlt, FaClock, FaHome } from 'react-icons/fa';
-
+import docter from "../assests/R.png"
 const AppointmentPage = () => {
   return (
     <div className="min-h-screen bg-white px-4 py-8">
@@ -11,7 +11,7 @@ const AppointmentPage = () => {
           {/* Doctor Info */}
           <div className="flex items-center gap-4">
             <img
-              src="https://cdn.askapollo.com/live/images/doctors/general-physician/dr-bm-suraj-general-physician-in-bangalore.png"
+              src={docter}
               alt="Dr. B M Suraj"
               className="w-24 h-24 rounded-full border-4 border-green-500"
             />
